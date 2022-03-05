@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "fnr": "apps/fnr",
+    "fnr-e2e": "apps/fnr-e2e"
+  }
+}
