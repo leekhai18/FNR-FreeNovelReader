@@ -2,7 +2,7 @@
   "projectType": "application",
   "root": "apps/fnr",
   "sourceRoot": "apps/fnr/src",
-  "prefix": "ktteam",
+  "prefix": "fnr",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
