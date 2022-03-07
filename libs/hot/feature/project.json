@@ -1,0 +1,31 @@
+{
+  "projectType": "library",
+  "root": "libs/hot/feature",
+  "sourceRoot": "libs/hot/feature/src",
+  "prefix": "fnr",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/hot/feature"
+      ],
+      "options": {
+        "jestConfig": "libs/hot/feature/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/hot/feature/src/**/*.ts",
+          "libs/hot/feature/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "type:feature",
+    "scope:fnr"
+  ]
+}

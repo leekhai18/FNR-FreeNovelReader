@@ -1,8 +1,17 @@
 {
   "version": 2,
   "projects": {
+    "completed-data-access": "libs/completed/data-access",
+    "completed-feature": "libs/completed/feature",
+    "detail-data-access": "libs/detail/data-access",
+    "detail-feature": "libs/detail/feature",
     "fnr": "apps/fnr",
     "fnr-e2e": "apps/fnr-e2e",
-    "shell-feature": "libs/shell/feature"
+    "hot-data-access": "libs/hot/data-access",
+    "hot-feature": "libs/hot/feature",
+    "new-updated-data-access": "libs/new-updated/data-access",
+    "new-updated-feature": "libs/new-updated/feature",
+    "shell-feature": "libs/shell/feature",
+    "shell-ui-layout": "libs/shell/ui/layout"
   }
 }

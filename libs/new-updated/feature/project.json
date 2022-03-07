@@ -1,0 +1,31 @@
+{
+  "projectType": "library",
+  "root": "libs/new-updated/feature",
+  "sourceRoot": "libs/new-updated/feature/src",
+  "prefix": "fnr",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/new-updated/feature"
+      ],
+      "options": {
+        "jestConfig": "libs/new-updated/feature/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/new-updated/feature/src/**/*.ts",
+          "libs/new-updated/feature/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "type:feature",
+    "scope:fnr"
+  ]
+}

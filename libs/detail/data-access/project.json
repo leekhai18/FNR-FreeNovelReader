@@ -1,0 +1,31 @@
+{
+  "projectType": "library",
+  "root": "libs/detail/data-access",
+  "sourceRoot": "libs/detail/data-access/src",
+  "prefix": "fnr",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/detail/data-access"
+      ],
+      "options": {
+        "jestConfig": "libs/detail/data-access/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/detail/data-access/src/**/*.ts",
+          "libs/detail/data-access/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "type:data-access",
+    "scope:fnr"
+  ]
+}
