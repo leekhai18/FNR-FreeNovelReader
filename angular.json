@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "fnr": "apps/fnr",
-    "fnr-e2e": "apps/fnr-e2e"
+    "fnr-e2e": "apps/fnr-e2e",
+    "shell-feature": "libs/shell/feature"
   }
 }
