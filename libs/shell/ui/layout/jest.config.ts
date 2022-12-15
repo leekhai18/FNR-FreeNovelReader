@@ -1,6 +1,7 @@
-module.exports = {
-  displayName: 'fnr',
-  preset: '../../jest.preset.js',
+/* eslint-disable */
+export default {
+  displayName: 'shell-ui-layout',
+  preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -8,7 +9,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/apps/fnr',
+  coverageDirectory: '../../../../coverage/libs/shell/ui/layout',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

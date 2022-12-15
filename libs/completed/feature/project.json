@@ -1,16 +1,14 @@
 {
+  "name": "completed-feature",
   "projectType": "library",
-  "root": "libs/completed/feature",
   "sourceRoot": "libs/completed/feature/src",
   "prefix": "fnr",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/completed/feature"
-      ],
+      "outputs": ["coverage/libs/completed/feature"],
       "options": {
-        "jestConfig": "libs/completed/feature/jest.config.js",
+        "jestConfig": "libs/completed/feature/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -24,8 +22,5 @@
       }
     }
   },
-  "tags": [
-    "type:feature",
-    "scope:fnr"
-  ]
+  "tags": ["type:feature", "scope:fnr"]
 }

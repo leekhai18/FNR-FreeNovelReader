@@ -1,16 +1,14 @@
 {
+  "name": "new-updated-data-access",
   "projectType": "library",
-  "root": "libs/new-updated/data-access",
   "sourceRoot": "libs/new-updated/data-access/src",
   "prefix": "fnr",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/new-updated/data-access"
-      ],
+      "outputs": ["coverage/libs/new-updated/data-access"],
       "options": {
-        "jestConfig": "libs/new-updated/data-access/jest.config.js",
+        "jestConfig": "libs/new-updated/data-access/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -24,8 +22,5 @@
       }
     }
   },
-  "tags": [
-    "type:data-access",
-    "scope:fnr"
-  ]
+  "tags": ["type:data-access", "scope:fnr"]
 }

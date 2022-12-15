@@ -1,5 +1,6 @@
-module.exports = {
-  displayName: 'hot-feature',
+/* eslint-disable */
+export default {
+  displayName: 'shell-feature',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +9,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/hot/feature',
+  coverageDirectory: '../../../coverage/libs/shell/feature',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

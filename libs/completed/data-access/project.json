@@ -1,16 +1,14 @@
 {
+  "name": "completed-data-access",
   "projectType": "library",
-  "root": "libs/completed/data-access",
   "sourceRoot": "libs/completed/data-access/src",
   "prefix": "fnr",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/completed/data-access"
-      ],
+      "outputs": ["coverage/libs/completed/data-access"],
       "options": {
-        "jestConfig": "libs/completed/data-access/jest.config.js",
+        "jestConfig": "libs/completed/data-access/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -24,8 +22,5 @@
       }
     }
   },
-  "tags": [
-    "type:data-access",
-    "scope:fnr"
-  ]
+  "tags": ["type:data-access", "scope:fnr"]
 }

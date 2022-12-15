@@ -1,16 +1,14 @@
 {
+  "name": "hot-data-access",
   "projectType": "library",
-  "root": "libs/hot/data-access",
   "sourceRoot": "libs/hot/data-access/src",
   "prefix": "fnr",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/hot/data-access"
-      ],
+      "outputs": ["coverage/libs/hot/data-access"],
       "options": {
-        "jestConfig": "libs/hot/data-access/jest.config.js",
+        "jestConfig": "libs/hot/data-access/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -24,8 +22,5 @@
       }
     }
   },
-  "tags": [
-    "type:data-access",
-    "scope:fnr"
-  ]
+  "tags": ["type:data-access", "scope:fnr"]
 }

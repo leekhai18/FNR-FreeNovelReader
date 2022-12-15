@@ -1,16 +1,14 @@
 {
+  "name": "detail-feature",
   "projectType": "library",
-  "root": "libs/detail/feature",
   "sourceRoot": "libs/detail/feature/src",
   "prefix": "fnr",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/detail/feature"
-      ],
+      "outputs": ["coverage/libs/detail/feature"],
       "options": {
-        "jestConfig": "libs/detail/feature/jest.config.js",
+        "jestConfig": "libs/detail/feature/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -24,8 +22,5 @@
       }
     }
   },
-  "tags": [
-    "type:feature",
-    "scope:fnr"
-  ]
+  "tags": ["type:feature", "scope:fnr"]
 }

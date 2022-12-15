@@ -1,6 +1,7 @@
-module.exports = {
-  displayName: 'shell-ui-layout',
-  preset: '../../../../jest.preset.js',
+/* eslint-disable */
+export default {
+  displayName: 'hot-data-access',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -8,7 +9,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../../coverage/libs/shell/ui/layout',
+  coverageDirectory: '../../../coverage/libs/hot/data-access',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

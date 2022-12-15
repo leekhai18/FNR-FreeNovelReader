@@ -1,16 +1,14 @@
 {
+  "name": "hot-feature",
   "projectType": "library",
-  "root": "libs/hot/feature",
   "sourceRoot": "libs/hot/feature/src",
   "prefix": "fnr",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/hot/feature"
-      ],
+      "outputs": ["coverage/libs/hot/feature"],
       "options": {
-        "jestConfig": "libs/hot/feature/jest.config.js",
+        "jestConfig": "libs/hot/feature/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -24,8 +22,5 @@
       }
     }
   },
-  "tags": [
-    "type:feature",
-    "scope:fnr"
-  ]
+  "tags": ["type:feature", "scope:fnr"]
 }

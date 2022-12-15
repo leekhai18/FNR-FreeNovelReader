@@ -10,10 +10,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -21,33 +18,17 @@
       "@ktteam/completed/data-access": [
         "libs/completed/data-access/src/index.ts"
       ],
-      "@ktteam/completed/feature": [
-        "libs/completed/feature/src/index.ts"
-      ],
-      "@ktteam/detail/data-access": [
-        "libs/detail/data-access/src/index.ts"
-      ],
-      "@ktteam/detail/feature": [
-        "libs/detail/feature/src/index.ts"
-      ],
-      "@ktteam/hot/data-access": [
-        "libs/hot/data-access/src/index.ts"
-      ],
-      "@ktteam/hot/feature": [
-        "libs/hot/feature/src/index.ts"
-      ],
+      "@ktteam/completed/feature": ["libs/completed/feature/src/index.ts"],
+      "@ktteam/detail/data-access": ["libs/detail/data-access/src/index.ts"],
+      "@ktteam/detail/feature": ["libs/detail/feature/src/index.ts"],
+      "@ktteam/hot/data-access": ["libs/hot/data-access/src/index.ts"],
+      "@ktteam/hot/feature": ["libs/hot/feature/src/index.ts"],
       "@ktteam/new-updated/data-access": [
         "libs/new-updated/data-access/src/index.ts"
       ],
-      "@ktteam/new-updated/feature": [
-        "libs/new-updated/feature/src/index.ts"
-      ],
-      "@ktteam/shell/feature": [
-        "libs/shell/feature/src/index.ts"
-      ],
-      "@ktteam/shell/ui/layout": [
-        "libs/shell/ui/layout/src/index.ts"
-      ]
+      "@ktteam/new-updated/feature": ["libs/new-updated/feature/src/index.ts"],
+      "@ktteam/shell/feature": ["libs/shell/feature/src/index.ts"],
+      "@ktteam/shell/ui/layout": ["libs/shell/ui/layout/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

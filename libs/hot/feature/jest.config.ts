@@ -1,5 +1,6 @@
-module.exports = {
-  displayName: 'new-updated-data-access',
+/* eslint-disable */
+export default {
+  displayName: 'hot-feature',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +9,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/new-updated/data-access',
+  coverageDirectory: '../../../coverage/libs/hot/feature',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
