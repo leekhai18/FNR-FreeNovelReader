@@ -1,25 +1,24 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-
-import {AppComponent} from './app.component';
-import {NxWelcomeComponent} from './nx-welcome.component';
-import {NZ_I18N, vi_VN} from 'ng-zorro-antd/i18n';
-import {registerLocaleData} from '@angular/common';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { registerLocaleData } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import vi from '@angular/common/locales/vi';
-import {FormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {AppRoutingModule} from './app-routing.module';
-import {IconsProviderModule} from './icons-provider.module';
-import {NzLayoutModule} from 'ng-zorro-antd/layout';
-import {NzMenuModule} from 'ng-zorro-antd/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NZ_I18N, vi_VN } from 'ng-zorro-antd/i18n';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 
 registerLocaleData(vi);
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule, FormsModule, HttpClientModule, BrowserAnimationsModule, AppRoutingModule, IconsProviderModule, NzLayoutModule, NzMenuModule],
-  providers: [{provide: NZ_I18N, useValue: vi_VN}],
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+  ],
+  providers: [{ provide: NZ_I18N, useValue: vi_VN }],
   bootstrap: [AppComponent],
 })
 export class AppModule {

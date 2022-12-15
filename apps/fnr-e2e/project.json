@@ -1,5 +1,5 @@
 {
-  "root": "apps/fnr-e2e",
+  "name": "fnr-e2e",
   "sourceRoot": "apps/fnr-e2e/src",
   "projectType": "application",
   "targets": {
@@ -17,18 +17,12 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/fnr-e2e/**/*.{js,ts}"
-        ]
+        "lintFilePatterns": ["apps/fnr-e2e/**/*.{js,ts}"]
       }
     }
   },
   "tags": [],
-  "implicitDependencies": [
-    "fnr"
-  ]
+  "implicitDependencies": ["fnr"]
 }

@@ -11,6 +11,7 @@
     "hot-feature": "libs/hot/feature",
     "new-updated-data-access": "libs/new-updated/data-access",
     "new-updated-feature": "libs/new-updated/feature",
+    "shared-ui": "libs/shared/ui",
     "shell-feature": "libs/shell/feature",
     "shell-ui-layout": "libs/shell/ui/layout"
   }
