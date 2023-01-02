@@ -30,7 +30,8 @@
       "@ktteam/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@ktteam/shell/feature": ["libs/shell/feature/src/index.ts"],
       "@ktteam/shell/ui/layout": ["libs/shell/ui/layout/src/index.ts"]
-    }
+    },
+    "types": ["bun-types"]
   },
   "exclude": ["node_modules", "tmp"]
 }
