@@ -4,7 +4,7 @@
             nzCollapsible
             nzWidth="200px">
     <div class="sidebar-logo">
-      <a href="/"
+      <a [routerLink]="['']"
          target="_blank">
         <img alt="logo"
              src="https://ng.ant.design/assets/img/logo.svg">
@@ -19,10 +19,12 @@
       <!-- search -->
 
       <!-- home -->
-      <li nz-menu-item>
+      <li nz-menu-item
+          nzMatchRouterExact
+          [nzSelected]="isActiveMap['home']">
         <span nz-icon
               nzType="home"></span>
-        <span>Home</span>
+        <span [routerLink]="['', 'home']">Home</span>
       </li>
 
       <!-- genre -->
@@ -32,16 +34,22 @@
           nzTitle="Genre">
         <ul>
           <li nz-menu-item
-              nzMatchRouter>
-            <a href="">Honus</a>
+              nzMatchRouterExact
+              [nzSelected]="isActiveMap['genre']['honus']">
+            <a [routerLink]="['', 'genre']"
+               fragment="honus">Honus</a>
           </li>
           <li nz-menu-item
-              nzMatchRouter>
-            <a>Mystery</a>
+              nzMatchRouterExact
+              [nzSelected]="isActiveMap['genre']['mystery']">
+            <a [routerLink]="['', 'genre']"
+               fragment="mystery">Mystery</a>
           </li>
           <li nz-menu-item
-              nzMatchRouter>
-            <a>Funny</a>
+              nzMatchRouterExact
+              [nzSelected]="isActiveMap['genre']['funny']">
+            <a [routerLink]="['', 'genre']"
+               fragment="funny">Funny</a>
           </li>
         </ul>
       </li>
@@ -53,16 +61,22 @@
           nzTitle="Library">
         <ul>
           <li nz-menu-item
-              nzMatchRouter>
-            <a>All</a>
+              nzMatchRouterExact
+              [nzSelected]="isActiveMap['library']['all']">
+            <a [routerLink]="['', 'library']"
+               fragment="all">All</a>
           </li>
           <li nz-menu-item
-              nzMatchRouter>
-            <a>Reading</a>
+              nzMatchRouterExact
+              [nzSelected]="isActiveMap['library']['reading']">
+            <a [routerLink]="['', 'library']"
+               fragment="reading">Reading</a>
           </li>
           <li nz-menu-item
-              nzMatchRouter>
-            <a>Finished</a>
+              nzMatchRouterExact
+              [nzSelected]="isActiveMap['library']['finished']">
+            <a [routerLink]="['', 'library']"
+               fragment="finished">Finished</a>
           </li>
         </ul>
       </li>
@@ -76,7 +90,7 @@
     <!-- content -->
     <nz-content class="m-4 mb-0">
       <div class="inner-content">
-        <router-outlet></router-outlet>
+        <ng-content></ng-content>
       </div>
     </nz-content>
 

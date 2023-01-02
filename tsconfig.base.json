@@ -27,6 +27,9 @@
         "libs/new-updated/data-access/src/index.ts"
       ],
       "@ktteam/new-updated/feature": ["libs/new-updated/feature/src/index.ts"],
+      "@ktteam/pages/genre": ["libs/pages/genre/src/index.ts"],
+      "@ktteam/pages/home": ["libs/pages/home/src/index.ts"],
+      "@ktteam/pages/library": ["libs/pages/library/src/index.ts"],
       "@ktteam/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@ktteam/shell/feature": ["libs/shell/feature/src/index.ts"],
       "@ktteam/shell/ui/layout": ["libs/shell/ui/layout/src/index.ts"]

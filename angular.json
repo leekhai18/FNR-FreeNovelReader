@@ -11,6 +11,9 @@
     "hot-feature": "libs/hot/feature",
     "new-updated-data-access": "libs/new-updated/data-access",
     "new-updated-feature": "libs/new-updated/feature",
+    "pages-genre": "libs/pages/genre",
+    "pages-home": "libs/pages/home",
+    "pages-library": "libs/pages/library",
     "shared-ui": "libs/shared/ui",
     "shell-feature": "libs/shell/feature",
     "shell-ui-layout": "libs/shell/ui/layout"
